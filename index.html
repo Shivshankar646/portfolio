@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="scrolling-text">
+               
+                <h2> <a href="#herosection">Hero Section</a></h2>
+                <h2> <a href="#about">About Me</a></h2>
+                <h2> <a href="#skills">Skills & Technologies</a></h2>
+                <h2> <a href="#projects">Projects</a></h2>
+                <h2> <a href="#experience">Experience</a></h2>
+                <h2> <a href="#contact">Contact</a></h2>
+               
+              
+              
+            </div>
+        </div>
+    </nav>
+    <section id="herosection" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Shivshankar</span></h1>
+            <p>A passionate Web Developer specializing in JavaScript, React, and more.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+        <div class="hero-image">
+            <img  src="IMG_20221218_150031.jpg" alt="Shivshankar">
+        </div>
+    </section>
+    
+ <!-- About Me Section -->
+<section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Shivshankar – a passionate Web Developer specializing in building responsive and user-friendly websites. I’m currently learning advanced JavaScript and working on exciting projects like a Spotify clone!</p>
+    
+    <div class="skills">
+      <h3>Skills:</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+  </section>
+  
+<!-- Skills & Technologies Section -->
+<section id="skills" class="skills-section">
+    <h2>Skills & Technologies</h2>
+  
+    <div class="skills-container">
+      <!-- Frontend Skills -->
+      <div class="skill-category">
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Flexbox, Grid)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+  
+      <!-- Tools & Frameworks -->
+      <div class="skill-category">
+        <h3>Tools & Frameworks</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>Bootstrap (optional)</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+  
+      <!-- Learning Now -->
+      <div class="skill-category">
+        <h3>Currently Learning</h3>
+        <ul>
+          <li>Advanced JavaScript (Async, Promises)</li>
+          <li>APIs & Fetch</li>
+          <li>Project Building (Spotify Clone)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+  
+    <div class="project-container">
+      <!-- Project 1: Spotify Clone -->
+      <div class="project-card">
+        <img src="your-spotify-image.jpg" alt="Spotify Clone">
+        <h3>Spotify Clone</h3>
+        <p>A music streaming platform inspired by Spotify. Built with HTML, CSS, and JavaScript.</p>
+        <a href="http://127.0.0.1:3000/index.html" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/Shivshankar646/spotifyclone" target="_blank" class="btn">GitHub</a>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="your-project2-image.jpg" alt="Project 2">
+        <h3>Project Name</h3>
+        <p>Description of your second project. Mention the technologies you used.</p>
+        <a href="#" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn">GitHub</a>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="your-project3-image.jpg" alt="Project 3">
+        <h3>Project Name</h3>
+        <p>Description of your third project. Briefly highlight what makes it special.</p>
+        <a href="#" target="_blank" class="btn">Live Demo</a>
+        <a href="#" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+  </section>
+  
+<!-- Experience Section -->
+<section id="experience" class="experience-section">
+    <h2>Experience</h2>
+  
+    <div class="experience-container">
+      <!-- Experience 1 -->
+      <div class="experience-item">
+        <h3>Web Developer (Self-Learning)</h3>
+        <p><strong>Dec 2024 – Present</strong></p>
+        <p>Building responsive web applications using HTML, CSS, and JavaScript. Currently working on a Spotify clone to deepen my understanding of real-world projects.</p>
+      </div>
+  
+      <!-- Experience 2 (Add when ready) -->
+      <div class="experience-item">
+        <h3>Freelance Web Developer</h3>
+        <p><strong>Coming Soon</strong></p>
+        <p>Planning to take on freelance projects to enhance my practical skills and deliver high-quality web solutions.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaboration or if you have any questions!</p>
+  
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/myzejdgp" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+  
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+  
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://github.com/Shivshankar646/spotifyclone.git" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+        <a href="mailto:shivshankarmunde91@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
