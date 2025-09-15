@@ -1,149 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivshankar Munde – Web Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/@github-calendar/iframe/dist/github-calendar.min.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shivshankar Munde — Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Shivshankar Munde — Web Developer. Responsive portfolio, GitHub activity and projects." />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="navbar">
-      <div class="logo">Shivshankar</div>
-      <ul class="nav-links">
-        <li><a href="#herosection">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle">🌙</button>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#herosection">Shivshankar<span class="dot">.</span></a>
+
+      <button id="nav-toggle" aria-label="Toggle navigation" class="nav-toggle">☰</button>
+
+      <nav id="nav" class="nav-links">
+        <a href="#herosection">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="cta" href="https://github.com/Shivshankar646" target="_blank" rel="noopener">View GitHub →</a>
     </div>
-  </nav>
+  </header>
 
   <!-- Hero -->
-  <section id="herosection" class="hero fade-in">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Shivshankar</span></h1>
-      <p>A passionate Web Developer specializing in JavaScript, React, and more.</p>
-      <a href="#projects" class="btn">View My Projects</a>
-    </div>
-    <div class="hero-image">
-      <img src="IMG_20221218_150031.jpg" alt="Shivshankar">
+  <section id="herosection" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Shivshankar</span></h1>
+        <p class="lead">I build responsive, high-performance web apps with JavaScript and React. I write clean code, ship fast, and love real projects — like my Spotify clone.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-ghost" href="#github">GitHub Activity</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="IMG_20221218_150031.jpg" alt="Shivshankar" />
+      </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="about-section fade-in">
+  <section id="about" class="section container">
     <h2>About Me</h2>
-    <p>Hi, I'm Shivshankar – a passionate Web Developer specializing in building responsive and user-friendly websites. I’m currently learning advanced JavaScript and working on exciting projects like a Spotify clone!</p>
+    <p class="muted">I’m a web developer focused on building responsive, accessible interfaces and real-world projects. Currently leveling up in advanced JavaScript & APIs.</p>
+
+    <div class="about-grid">
+      <div class="card">
+        <h3>Quick facts</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript (ES6+)</li>
+          <li>React, Fetch/APIs</li>
+          <li>Responsive & accessible UI</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Current focus</h3>
+        <p>Building a Spotify clone, learning async patterns, and building projects to demonstrate production-ready skills.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills-section fade-in">
-    <h2>Skills & Technologies</h2>
-    <div class="skills-container">
-      <div class="skill-category">
-        <h3>Frontend Development</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3 (Flexbox, Grid)</li>
-          <li>JavaScript (ES6+)</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Tools & Frameworks</h3>
-        <ul>
-          <li>Git & GitHub</li>
-          <li>Bootstrap</li>
-          <li>VS Code</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Currently Learning</h3>
-        <ul>
-          <li>Advanced JavaScript (Async, Promises)</li>
-          <li>APIs & Fetch</li>
-          <li>Spotify Clone</li>
-        </ul>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <p>HTML5 • CSS3 (Flexbox & Grid) • JavaScript (ES6+) • React</p>
+        </div>
+        <div class="skill-card">
+          <h4>Tools</h4>
+          <p>Git • GitHub • VS Code • DevTools</p>
+        </div>
+        <div class="skill-card">
+          <h4>Practice</h4>
+          <p>Building projects, debugging, performance, and accessibility.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects-section fade-in">
-    <h2>My Projects</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <img src="your-spotify-image.jpg" alt="Spotify Clone">
-        <h3>Spotify Clone</h3>
-        <p>A music streaming platform inspired by Spotify. Built with HTML, CSS, and JavaScript.</p>
-        <a href="https://shivshankar646.github.io/spotifyclone/" target="_blank" class="btn">Live Demo</a>
-        <a href="https://github.com/Shivshankar646/spotifyclone" target="_blank" class="btn">GitHub</a>
+  <section id="projects" class="section container">
+    <h2>Selected Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="your-spotify-image.jpg" alt="Spotify clone screenshot" />
+        <div class="project-body">
+          <h3>Spotify Clone</h3>
+          <p>Music player UI + playlist handling. JavaScript, DOM, responsive UI.</p>
+          <div class="project-links">
+            <a class="btn-sm" href="https://shivshankar646.github.io/spotifyclone/" target="_blank">Live</a>
+            <a class="btn-sm" href="https://github.com/Shivshankar646/spotifyclone" target="_blank">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="your-project2-image.jpg" alt="Weather app screenshot" />
+        <div class="project-body">
+          <h3>Weather App</h3>
+          <p>Uses Geolocation + OpenWeather API for live weather. Clean UI and mobile-first design.</p>
+          <div class="project-links">
+            <a class="btn-sm" href="https://shivshankar646.github.io/wheather-app/" target="_blank">Live</a>
+            <a class="btn-sm" href="https://github.com/Shivshankar646/wheather-app" target="_blank">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="your-project3-image.jpg" alt="Project screenshot" />
+        <div class="project-body">
+          <h3>Project 3</h3>
+          <p>Short description that highlights impact, tech used or unique part of the project.</p>
+          <div class="project-links">
+            <a class="btn-sm" href="#" target="_blank">Live</a>
+            <a class="btn-sm" href="#" target="_blank">Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GitHub Activity -->
+  <section id="github" class="section container">
+    <h2>GitHub Activity</h2>
+    <p class="muted">See recent contributions and monthly breakdown — pulled directly from GitHub (live).</p>
+
+    <div class="github-grid">
+      <!-- Contribution calendar (image fallback) -->
+      <div class="gh-card">
+        <h4>Contribution calendar (past year)</h4>
+        <!-- live calendar image (third-party render) -->
+        <img id="gh-calendar" src="https://ghchart.rshah.org/Shivshankar646" alt="GitHub contribution chart" />
+        <p class="muted small">If the calendar looks empty, make sure your repos are public and commits are on default branch.</p>
       </div>
-      <div class="project-card">
-        <img src="your-project2-image.jpg" alt="Weather App">
-        <h3>Weather App</h3>
-        <p>Check weather at your current location instantly. Built with HTML, CSS, and JavaScript.</p>
-        <a href="https://shivshankar646.github.io/wheather-app/" target="_blank" class="btn">Live Demo</a>
-        <a href="https://github.com/Shivshankar646/wheather-app" target="_blank" class="btn">GitHub</a>
+
+      <!-- Monthly breakdown (computed from GitHub contributions SVG if allowed by browser) -->
+      <div class="gh-card">
+        <h4>Commits per month (last 12 months)</h4>
+        <div id="month-chart" class="month-chart">
+          <p class="muted small">Loading monthly data…</p>
+        </div>
+        <div class="gh-stats">
+          <img src="https://github-readme-stats.vercel.app/api?username=Shivshankar646&show_icons=true&theme=radical" alt="GitHub stats" />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="experience-section fade-in">
+  <section id="experience" class="section container">
     <h2>Experience</h2>
-    <div class="experience-container">
-      <div class="experience-item">
+    <div class="experience-grid">
+      <div class="card">
         <h3>Web Developer (Self-Learning)</h3>
         <p><strong>Dec 2024 – Present</strong></p>
-        <p>Building responsive web applications using HTML, CSS, and JavaScript. Currently working on a Spotify clone to deepen my understanding of real-world projects.</p>
+        <p>Building responsive web apps and polishing JavaScript skills. Real projects: Spotify clone, Weather app.</p>
       </div>
-      <div class="experience-item">
-        <h3>Freelance Web Developer</h3>
-        <p><strong>Coming Soon</strong></p>
-        <p>Planning to take on freelance projects to enhance my practical skills and deliver high-quality web solutions.</p>
+      <div class="card">
+        <h3>Freelance (Coming soon)</h3>
+        <p>Planning freelance projects to deliver polished, production-ready sites.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- GitHub Contributions -->
-  <section id="github" class="github-section fade-in">
-    <h2>My GitHub Contributions</h2>
-    <div class="calendar">
-      <!-- GitHub calendar will load here -->
-      <iframe src="https://ghchart.rshah.org/007bff/Shivshankar646" frameborder="0" width="100%" height="200"></iframe>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact-section fade-in">
+  <section id="contact" class="section container">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaboration or if you have any questions!</p>
-    <div class="contact-container">
-      <form action="https://formspree.io/f/myzejdgp" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+    <div class="contact-grid">
+      <form class="contact-card" action="https://formspree.io/f/myzejdgp" method="POST">
+        <input name="name" type="text" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Your email" required />
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <a class="btn btn-ghost" href="mailto:shivshankarmunde91@gmail.com">Email me</a>
+        </div>
       </form>
-      <div class="social-links">
-        <a href="https://github.com/Shivshankar646" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/shivshankarmunde" target="_blank">LinkedIn</a>
-        <a href="mailto:shivshankarmunde91@gmail.com">Email</a>
-      </div>
+
+      <aside class="contact-card small">
+        <h3>Find me</h3>
+        <p>
+          <a href="https://github.com/Shivshankar646" target="_blank">GitHub</a><br />
+          <a href="https://www.linkedin.com/in/shivshankarmunde" target="_blank">LinkedIn</a><br />
+          <a href="mailto:shivshankarmunde91@gmail.com">shivshankarmunde91@gmail.com</a>
+        </p>
+      </aside>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shivshankar Munde • Built with ❤️ and JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Inline script: mobile nav + GitHub monthly parse -->
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav toggle
+    (function () {
+      const toggle = document.getElementById('nav-toggle');
+      const nav = document.getElementById('nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('open'));
+      // close on link click (mobile)
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    })();
+
+    // GitHub contributions → monthly totals (attempt)
+    (function () {
+      const username = 'Shivshankar646';
+      const monthContainer = document.getElementById('month-chart');
+
+      async function loadMonthly() {
+        try {
+          // fetch contributions SVG page from GitHub (contains an SVG with rects data-date & data-count)
+          const url = `https://github.com/users/${username}/contributions`;
+          const res = await fetch(url);
+          if (!res.ok) throw new Error('Fetch failed: ' + res.status);
+          const text = await res.text();
+          // parse returned HTML & find rects
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, 'text/html');
+          const rects = doc.querySelectorAll('rect[data-date][data-count]');
+          if (!rects || rects.length === 0) throw new Error('No contribution rectangles found (possible CORS or format change)');
+
+          // accumulate per-month (YYYY-MM)
+          const monthly = {};
+          rects.forEach(r => {
+            const date = r.getAttribute('data-date'); // "YYYY-MM-DD"
+            const count = parseInt(r.getAttribute('data-count') || '0', 10);
+            const mm = date.slice(0, 7);
+            monthly[mm] = (monthly[mm] || 0) + count;
+          });
+
+          // sort months and take last 12
+          const months = Object.keys(monthly).sort();
+          const last12 = months.slice(-12);
+          const values = last12.map(m => ({ month: m, count: monthly[m] }));
+
+          // build simple bar chart
+          const max = Math.max(...values.map(v => v.count), 1);
+          const bars = document.createElement('div');
+          bars.className = 'bars-wrap';
+
+          values.forEach(v => {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'bar-item';
+            const bar = document.createElement('div');
+            bar.className = 'bar';
+            bar.style.height = Math.round((v.count / max) * 100) + '%';
+            bar.title = `${v.month}: ${v.count} contributions`;
+            const label = document.createElement('div');
+            label.className = 'bar-label';
+            const monthLabel = v.month.slice(5); // "MM"
+            label.textContent = monthLabel;
+            const countLabel = document.createElement('div');
+            countLabel.className = 'bar-count';
+            countLabel.textContent = v.count;
+            wrapper.appendChild(bar);
+            wrapper.appendChild(countLabel);
+            wrapper.appendChild(label);
+            bars.appendChild(wrapper);
+          });
+
+          monthContainer.innerHTML = '<p class="small muted">Hover bars to see exact counts.</p>';
+          monthContainer.appendChild(bars);
+        } catch (err) {
+          console.warn('Could not parse GitHub contributions:', err);
+          monthContainer.innerHTML = '<p class="muted small">Monthly contributions cannot be loaded due to browser CORS restrictions — showing contribution image instead. (This works when served from a server or with a proxy.)</p>';
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', loadMonthly);
+    })();
+  </script>
 </body>
 </html>
+
+
 
 
 
