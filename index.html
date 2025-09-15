@@ -5,27 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shivshankar Munde – Web Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/@github-calendar/iframe/dist/github-calendar.min.js" defer></script>
 </head>
 <body>
+
   <!-- Navbar -->
   <nav>
     <div class="navbar">
       <div class="logo">Shivshankar</div>
-      <ul class="nav-links">
-        <li><a href="#herosection">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle">🌙</button>
+      <div class="nav-links">
+        <a href="#herosection">Hero</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <button id="darkModeToggle">🌙</button>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="herosection" class="hero fade-in">
     <div class="hero-content">
       <h1>Hi, I'm <span>Shivshankar</span></h1>
@@ -37,13 +36,13 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="about-section fade-in">
     <h2>About Me</h2>
     <p>Hi, I'm Shivshankar – a passionate Web Developer specializing in building responsive and user-friendly websites. I’m currently learning advanced JavaScript and working on exciting projects like a Spotify clone!</p>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="skills" class="skills-section fade-in">
     <h2>Skills & Technologies</h2>
     <div class="skills-container">
@@ -60,7 +59,7 @@
         <h3>Tools & Frameworks</h3>
         <ul>
           <li>Git & GitHub</li>
-          <li>Bootstrap</li>
+          <li>Bootstrap (optional)</li>
           <li>VS Code</li>
         </ul>
       </div>
@@ -69,13 +68,21 @@
         <ul>
           <li>Advanced JavaScript (Async, Promises)</li>
           <li>APIs & Fetch</li>
-          <li>Spotify Clone</li>
+          <li>Project Building (Spotify Clone)</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- GitHub Contribution Calendar -->
+  <section class="github-section fade-in">
+    <h2>My GitHub Activity</h2>
+    <div class="calendar">
+      <!-- Calendar loads here -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects" class="projects-section fade-in">
     <h2>My Projects</h2>
     <div class="project-container">
@@ -89,40 +96,31 @@
       <div class="project-card">
         <img src="your-project2-image.jpg" alt="Weather App">
         <h3>Weather App</h3>
-        <p>Check weather at your current location instantly. Built with HTML, CSS, and JavaScript.</p>
+        <p>Weather app to see the weather at your current location instantly.</p>
         <a href="https://shivshankar646.github.io/wheather-app/" target="_blank" class="btn">Live Demo</a>
         <a href="https://github.com/Shivshankar646/wheather-app" target="_blank" class="btn">GitHub</a>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Experience Section -->
   <section id="experience" class="experience-section fade-in">
     <h2>Experience</h2>
     <div class="experience-container">
       <div class="experience-item">
         <h3>Web Developer (Self-Learning)</h3>
         <p><strong>Dec 2024 – Present</strong></p>
-        <p>Building responsive web applications using HTML, CSS, and JavaScript. Currently working on a Spotify clone to deepen my understanding of real-world projects.</p>
+        <p>Building responsive web apps using HTML, CSS, and JavaScript. Currently working on a Spotify clone.</p>
       </div>
       <div class="experience-item">
         <h3>Freelance Web Developer</h3>
         <p><strong>Coming Soon</strong></p>
-        <p>Planning to take on freelance projects to enhance my practical skills and deliver high-quality web solutions.</p>
+        <p>Planning to take on freelance projects to enhance my skills and deliver high-quality solutions.</p>
       </div>
     </div>
   </section>
 
-  <!-- GitHub Contributions -->
-  <section id="github" class="github-section fade-in">
-    <h2>My GitHub Contributions</h2>
-    <div class="calendar">
-      <!-- GitHub calendar will load here -->
-      <iframe src="https://ghchart.rshah.org/007bff/Shivshankar646" frameborder="0" width="100%" height="200"></iframe>
-    </div>
-  </section>
-
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="contact-section fade-in">
     <h2>Contact Me</h2>
     <p>Feel free to reach out for collaboration or if you have any questions!</p>
@@ -141,9 +139,12 @@
     </div>
   </section>
 
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
